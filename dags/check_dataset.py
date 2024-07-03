@@ -2,7 +2,7 @@ import os
 from google.cloud import bigquery
 
 def check_and_create_dataset_table(dataset_id, table_id):
-    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/opt/airflow/credentials/spotify-project-airflow-keys.json"
+    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "<credentials_path>"
     bq_client = bigquery.Client()
     
     dataset_ref = bq_client.dataset(dataset_id)

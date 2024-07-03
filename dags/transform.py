@@ -17,7 +17,7 @@ def transform_data():
     raw_file_name = "most-streamed-spotify-songs-2024.csv"
     output_file_name = "clean-data-spotify.parquet"
     
-    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/opt/airflow/credentials/spotify-project-airflow-keys.json"
+    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "<credentials_path>"
     
     client = storage.Client()
     _raw_bucket = client.get_bucket(f"{raw_bucket}")

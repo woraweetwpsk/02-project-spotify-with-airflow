@@ -15,7 +15,7 @@
 - Data Lake: Google Cloud Storage
 - Data Warehouse: Bigquery
 - Data Visualization: Looker Studio
-- Languge: Python  
+- Language: Python  
 
 ---
 ### DAG Tasks
